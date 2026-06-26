@@ -1,0 +1,58 @@
+{
+    "sponsor": [
+    {
+      "name": "monster",
+      "displayName": "MONSTER",
+      "description": "에너지 드링크 브랜드",
+      "website": "https://www.monster.com",
+      "logoImage": "monster_logo.png",
+      "detailImages": []
+    },
+    {
+      "name": "spotlite",
+      "displayName": "SPOTLITE",
+      "description": "대회 운영 플랫폼",
+      "website": "https://spotlite.co.kr",
+      "logoImage": "spotlite_logo.png",
+      "detailImages": []
+    },
+    {
+      "name": "bitnara",
+      "displayName": "빛나라",
+      "description": "기능성 운동복 전문 브랜드",
+      "website": "https://smartstore.naver.com/ssshine",
+      "logoImage": "bitnara_logo.png",
+      "detailImages": ["bitnara1.png","bitnara2.png","bitnara3.png","bitnara4.png"]
+    }
+  ],
+  "individual": {
+    "서강대": ["김건우", "김서강"],
+    "이화여대": ["김이화", "박이화"]
+  },
+  "contact": {
+    "subtitle": "T.A.P Sogang X Ewha",
+    "email": "tap.jiujutsu@gmail.com",
+    "socials": [
+      {
+        "label": "T.A.P 인스타그램",
+        "url": "https://www.instagram.com/tap_jiujitsu/",
+        "icon": "instagram.png"
+      },
+      {
+        "label": "전대주 인스타그램",
+        "url": "https://www.instagram.com/university_bjj/",
+        "icon": "instagram.png"
+      },
+      {
+        "label": "전대주 유튜브",
+        "url": "https://www.youtube.com/channel/UCr6t7TNX_ZnPxDriZdCqfSg",
+        "icon": "youtube.png"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© T.A.P Sogang X Ewha",
+    "logoImage": "tap로고(black).png",
+    "logoAlt": "TAP 로고"
+  }
+}

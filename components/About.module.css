@@ -1,0 +1,151 @@
+.section {
+  padding: 6rem 0;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 350;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 9rem 0;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.sectionHeading {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sectionSubheading {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin-bottom: 4rem;
+  color: #6c757d;
+}
+
+.introRow {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.introParagraphs {
+  flex: 1;
+  min-width: 40%;
+  margin: 20px;
+}
+
+.introParagraphs p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.introLogo {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.staff {
+  margin-top: 50px;
+  border-top: 1px dotted rgb(145, 145, 145);
+}
+
+.staffTitle {
+  margin: 40px;
+}
+
+.staffTitle h5 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.infoBox {
+  margin-left: 40px;
+}
+
+.infoRow {
+  margin: 20px 0;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.groupName {
+  margin: 0 10px;
+  border-bottom: 2px solid #dc3545;
+  white-space: nowrap;
+}
+
+.member {
+  word-break: keep-all;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+/* 모바일 */
+@media (max-width: 767px) {
+  .staff {
+    font-size: 13px;
+    border: none;
+  }
+
+  .staffTitle {
+    text-align: center;
+  }
+
+  .infoBox {
+    margin-left: 0;
+  }
+
+  .infoRow {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .groupName {
+    flex: 0 0 auto;
+    margin-right: 7px;
+    height: 100%;
+  }
+}
+
+
+/* 다크모드 */
+@media (prefers-color-scheme: dark) {
+  .sectionSubheading {
+    color: #adb5bd;
+  }
+
+  .staff {
+    border-top-color: rgb(90, 90, 90);
+  }
+  .introLogo img {
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+  }
+}

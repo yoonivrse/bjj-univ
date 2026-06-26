@@ -1,0 +1,112 @@
+{
+  "2025": [
+    {
+      "gender": "남성",
+      "belts": [
+        {
+          "belt": "white",
+          "weightClasses": [
+            {
+              "class": "white -65",
+              "rankings": [
+                { "rank": 1, "name": "서강1번2025", "university": "서강대", "gym": "TAP" },
+                { "rank": 2, "name": "김건오2025", "university": "서강대", "gym": "TAP" }
+              ]
+            },
+            {
+              "class": "white -70",
+              "rankings": [
+                { "rank": 1, "name": "홍길동", "university": "서강대", "gym": "TAP" },
+                { "rank": 2, "name": "이철수", "university": "서강대", "gym": "TAP" }
+              ]
+            }
+          ]
+        },
+        {
+          "belt": "blue",
+          "weightClasses": [
+            {
+              "class": "blue -70",
+              "rankings": [
+                { "rank": 1, "name": "서강", "university": "서강대", "gym": "TAP" },
+                { "rank": 2, "name": "강서", "university": "서강대", "gym": "TAP" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gender": "여성",
+      "belts": [
+        {
+          "belt": "white",
+          "weightClasses": [
+            {
+              "class": "white -58",
+              "rankings": [
+                { "rank": 1, "name": "이서강", "university": "서강대", "gym": "TAP" },
+                { "rank": 2, "name": "김서강", "university": "서강대", "gym": "TAP" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "2024": [
+    {
+      "gender": "남성",
+      "belts": [
+        {
+          "belt": "white",
+          "weightClasses": [
+            {
+              "class": "white -65",
+              "rankings": [
+                { "rank": 1, "name": "김건우", "university": "서강대", "gym": "TAP" },
+                { "rank": 2, "name": "김건오", "university": "서강대", "gym": "TAP" }
+              ]
+            },
+            {
+              "class": "white -70",
+              "rankings": [
+                { "rank": 1, "name": "홍길동", "university": "서강대", "gym": "TAP" },
+                { "rank": 2, "name": "이철수", "university": "서강대", "gym": "TAP" }
+              ]
+            }
+          ]
+        },
+        {
+          "belt": "blue",
+          "weightClasses": [
+            {
+              "class": "blue -70",
+              "rankings": [
+                { "rank": 1, "name": "서강", "university": "서강대", "gym": "TAP" },
+                { "rank": 2, "name": "강서", "university": "서강대", "gym": "TAP" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gender": "여성",
+      "belts": [
+        {
+          "belt": "white",
+          "weightClasses": [
+            {
+              "class": "white -58",
+              "rankings": [
+                { "rank": 1, "name": "이서강", "university": "서강대", "gym": "TAP" },
+                { "rank": 2, "name": "김서강", "university": "서강대", "gym": "TAP" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

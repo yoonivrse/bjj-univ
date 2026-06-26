@@ -1,0 +1,107 @@
+.rankingContent .gender {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.rankingContent .gender span {
+  padding: 5px 40px;
+  background-color: #313131;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.rankingContent .rankingContainer {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.rankingContent .rankingContainer .belt {
+  margin-top: 50px;
+}
+
+.rankingContent .rankingContainer .table {
+  table-layout: fixed;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.rankingContent .rankingContainer .table th {
+  width: 6%;
+  font-weight: 600;
+}
+
+.rankingContent .rankingContainer .table .name {
+  width: 20%;
+}
+
+.rankingContent .rankingContainer .table .gym {
+  width: 40%;
+}
+
+.rankingContent .rankingContainer .table .school {
+  width: 40%;
+}
+
+.rankingContent .rankingContainer .table td,
+.rankingContent .rankingContainer .table th {
+  padding: 5px;
+  border-top: 1px solid #ccc;
+  word-break: break-all;
+  vertical-align: middle;
+  color: inherit;
+}
+
+.rankingContent .rankingContainer .table td {
+  color: inherit;
+}
+
+.rankingContent .rankingContainer .tableMin {
+  min-width: 450px;
+}
+
+.whiteBelt th  { background: #e6e6e6;   color: #000; }
+.blueBelt th   { background: #7cbbff88; color: #000; }
+.purpleBelt th { background: #ac7cff7c; color: #000; }
+.brownBelt th  { background: #c8a06088; color: #000; }
+.blackBelt th  { background: #333333bb; color: #fff; }
+
+/* 다크모드 */
+@media (prefers-color-scheme: dark) {
+  .rankingContent .rankingContainer .table td,
+  .rankingContent .rankingContainer .table th {
+    border-top-color: #444;
+  }
+  .whiteBelt th  { background: #555555; color: #fff; }
+  .blueBelt th   { background: #2a6db5; color: #fff; }
+  .purpleBelt th { background: #6b3fa0; color: #fff; }
+  .brownBelt th  { background: #7a5230; color: #fff; }
+  .blackBelt th  { background: #1a1a1a; color: #fff; }
+}
+
+@media screen and (max-width: 767px) {
+  .rankingContent .gender span {
+    padding: 5px 27px;
+    background-color: #000000;
+    font-weight: 500;
+    border-radius: 10px;
+  }
+
+  .rankingContent .rankingContainer {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .rankingContent .rankingContainer .belt {
+    overflow-x: auto;
+  }
+
+  .rankingContent .rankingContainer .tableBox {
+    overflow-x: auto;
+  }
+}

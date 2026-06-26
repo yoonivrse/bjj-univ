@@ -1,0 +1,249 @@
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.sectionHeading {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sectionSubheading {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin-bottom: 4rem;
+  color: #6c757d;
+}
+
+.sponsorSection {
+  padding: 6rem 0;
+  background-color: #f8f9fa;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .sponsorSection {
+    padding: 9rem 0;
+  }
+}
+
+.sponsorGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 767px) {
+  .sponsorGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+.sponsorItem {
+  max-width: 26rem;
+  margin: 0 auto;
+}
+
+.sponsorLink {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.sponsorHover {
+  display: flex;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+  z-index: 1;
+}
+
+.sponsorLink:hover .sponsorHover {
+  opacity: 1;
+}
+
+.sponsorHoverIcon {
+  font-size: 3rem;
+  color: #fff;
+  line-height: 1;
+}
+
+.sponsorCaption {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.sponsorCaptionHeading {
+  font-size: 1.5rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.individualSection {
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.individualSectionWithBorder {
+  border-top: 1px solid #dee2e6;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.individualTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.individualGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem 3rem;
+}
+
+.individualGroup {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.individualUniversity {
+  font-weight: 700;
+  border-bottom: 2px solid #dc3545;
+  white-space: nowrap;
+}
+
+.individualMembers {
+  color: #495057;
+}
+
+.contactSection {
+  padding: 6rem 0;
+  background-color: #212529;
+  color: #fff;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .contactSection {
+    padding: 9rem 0;
+  }
+}
+
+.contactSection .sectionSubheading {
+  color: #adb5bd;
+}
+
+.contactEmail {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.socialBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-weight: 400;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  border: 4px solid #df0101;
+  border-radius: 20px;
+  padding: 15px;
+  color: #fff;
+  margin: 1rem;
+  transition: background-color 0.2s;
+}
+
+.socialLink:hover {
+  background-color: #df0101;
+  color: #fff;
+}
+
+.socialLink:active {
+  transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+  .socialBox {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer {
+  padding: 1.5rem 0;
+  background-color: #212529;
+  border-top: 1px solid #343a40;
+  font-size: 0.9rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #adb5bd;
+}
+
+.footerInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 다크모드 */
+@media (prefers-color-scheme: dark) {
+  .sponsorSection {
+    background-color: #1a1a1a;
+  }
+
+  .sponsorCaption {
+    background-color: #2a2a2a;
+  }
+
+  .sponsorCaptionHeading {
+    color: #fff;
+  }
+
+  .individualMembers {
+    color: #adb5bd;
+  }
+
+  .sectionSubheading {
+    color: #adb5bd;
+  }
+
+  .footer img {
+    background-color: #fff;
+    padding: 4px;
+    border-radius: 4px;
+  }
+}

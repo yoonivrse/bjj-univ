@@ -1,0 +1,15 @@
+{
+  "masthead": {
+    "year": "2025년",
+    "edition": "제12회",
+    "competitionName": "전국대학생주짓수대회",
+    "statusMessages": [
+        "참가자분들 모두 수고하셨습니다!",
+        "2026년 제13회 대회에도 많은 관심 부탁드립니다."
+      ],
+    "images": {
+      "desktop": "header-bg.jpg",
+      "mobile": "header-bg-mobile.jpg"
+    }
+  }
+}
