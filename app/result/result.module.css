@@ -1,8 +1,3 @@
-/* app/result/result.module.css */
-
-/* navbar 높이만큼 상단 여백 */
-/* 모바일: navbar padding 1rem*2 + 브랜드 높이 ≈ 80px */
-/* 데스크탑: navbar padding 1.5rem*2 + 브랜드 높이 ≈ 100px */
 .main {
   padding-top: 80px;
 }

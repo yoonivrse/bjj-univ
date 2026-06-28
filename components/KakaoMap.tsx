@@ -23,8 +23,8 @@ export default function KakaoMap({ placeName }: Props) {
       if (!mounted || !mapRef.current) return;
 
       const map = new window.kakao.maps.Map(mapRef.current, {
-        center: new window.kakao.maps.LatLng(37.549891, 126.939084),
-        level: 5,
+        center: new window.kakao.maps.LatLng(37.5, 127.0),
+        level: 4,
       });
 
       const places = new window.kakao.maps.services.Places();
@@ -34,14 +34,20 @@ export default function KakaoMap({ placeName }: Props) {
         if (status !== window.kakao.maps.services.Status.OK) return;
 
         const { x, y, place_name } = result[0];
-        const position = new window.kakao.maps.LatLng(y, x);
+        const position = new window.kakao.maps.LatLng(Number(y), Number(x));
 
         map.setCenter(position);
+        map.setLevel(4);
 
-        const marker = new window.kakao.maps.Marker({ map, position });
+        // 마커 생성
+        const marker = new window.kakao.maps.Marker({
+          map,
+          position,
+        });
 
         const infowindow = new window.kakao.maps.InfoWindow({
-          content: `<div style="padding:6px 10px;font-size:13px;font-weight:600;">${place_name}</div>`,
+          content: `<div style="padding:6px 10px;font-size:13px;font-weight:600;color:#000;">${place_name}</div>`,
+          removable: false,
         });
         infowindow.open(map, marker);
       });
@@ -50,9 +56,13 @@ export default function KakaoMap({ placeName }: Props) {
     function loadSDK() {
       const appKey = process.env.NEXT_PUBLIC_KAKAO_MAP_KEY;
 
-      // 이미 로드 완료된 경우
       if (window.kakao?.maps?.services) {
         initMap();
+        return;
+      }
+
+      if (window.kakao?.maps) {
+        window.kakao.maps.load(initMap);
         return;
       }
 

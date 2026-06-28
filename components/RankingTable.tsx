@@ -1,7 +1,3 @@
-// components/RankingTable.tsx
-// result.json의 데이터를 받아 벨트별 · 체급별 순위표를 렌더합니다.
-// 벨트 종류는 JSON에서 동적으로 읽어오므로 하드코딩 없음.
-
 import styles from "./RankingTable.module.css";
 
 type Ranking = {
@@ -12,17 +8,17 @@ type Ranking = {
 };
 
 type WeightClass = {
-  class: string;       // e.g. "white -65"  →  표기: "white -65kg"
+  class: string;
   rankings: Ranking[];
 };
 
 type BeltGroup = {
-  belt: string;        // e.g. "white" | "blue" | "purple" ...
+  belt: string;
   weightClasses: WeightClass[];
 };
 
 type GenderGroup = {
-  gender: string;      // "남성" | "여성"
+  gender: string;
   belts: BeltGroup[];
 };
 

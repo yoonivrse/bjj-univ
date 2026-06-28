@@ -1,7 +1,5 @@
 "use client";
 
-// app/result/page.tsx
-
 import { useState, useRef, useEffect } from "react";
 import RankingTable from "@/components/RankingTable";
 import resultData from "@/data/result.json";
@@ -41,7 +39,6 @@ export default function ResultPage() {
         </button>
       </a>
 
-      {/* ── 연도 드롭다운 ── */}
       <div className={styles.dropdownWrapper} ref={dropdownRef}>
         <button
           className={styles.dropdownTrigger}

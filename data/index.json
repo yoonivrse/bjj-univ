@@ -3,10 +3,24 @@
     "year": "2025년",
     "edition": "제12회",
     "competitionName": "전국대학생주짓수대회",
-    "statusMessages": [
+
+    "status": "recruiting",
+
+    "statusMessages": {
+      "recruiting": [
+        "참가자 모집이 시작되었습니다!",
+        "2025년 대회의 주인공이 되어보세요."
+      ],
+      "bracket": [
+        "2025년 대회의 대진표가 발표되었습니다.",
+        "아래 버튼을 통해 확인하세요!"
+      ],
+      "closed": [
         "참가자분들 모두 수고하셨습니다!",
         "2026년 제13회 대회에도 많은 관심 부탁드립니다."
-      ],
+      ]
+    },
+
     "images": {
       "desktop": "header-bg.jpg",
       "mobile": "header-bg-mobile.jpg"

@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./CompetitionInfo.module.css";
 import competitionData from "@/data/competition.json";
 import KakaoMap from "./KakaoMap";
+import indexData from "@/data/index.json";
 
 function parseBold(text: string) {
   const parts = text.split(/\*\*(.*?)\*\*/g);
@@ -12,6 +13,7 @@ function parseBold(text: string) {
 
 export default function CompetitionInfo() {
   const { title, subtitle, notice, posters, guide } = competitionData;
+  const isOpen = indexData.masthead.status === "recruiting";
 
   return (
     <section className={styles.section} id="main-info">
@@ -36,9 +38,9 @@ export default function CompetitionInfo() {
             )}
 
             <div className={styles.noticeItemDiv}>
-            {notice.items.map((item, i) => (
-              <b key={i} className={styles.noticeItem}>▪ {item}</b>
-            ))}
+              {notice.items.map((item, i) => (
+                <b key={i} className={styles.noticeItem}>▪ {item}</b>
+              ))}
             </div>
 
             <p>
@@ -62,17 +64,25 @@ export default function CompetitionInfo() {
           ))}
 
           <div className={styles.guide}>
-            {guide.registerUrl && (
-              <div className={styles.guideRegisterDiv}>
-                <a href={guide.registerUrl} className={styles.guideRegister}>
-                  <button>참가신청</button>
-                </a>
-                {guide.priorNotice && (
-                  <div className={styles.guidePrior}>
-                    {guide.priorNotice}
-                  </div>
-                )}
+            {isOpen && guide.registerButtons && guide.registerButtons.length > 0 && (
+              <>
+              <div className={styles.registerButtonsDiv}>
+                {guide.registerButtons.map((btn, i) => (
+                  <a
+                  key={i}
+                  href={btn.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.registerButton}
+                  >
+                    {btn.label}
+                  </a>
+                ))}
               </div>
+                {guide.priorNotice && (
+                  <p className={styles.guidePrior}>{guide.priorNotice}</p>
+                )}
+              </>
             )}
 
             {guide.sections.map((sec, i) => (
@@ -93,7 +103,6 @@ export default function CompetitionInfo() {
                   </div>
                 )}
 
-                
                 {"map" in sec && sec.map && (
                   <KakaoMap placeName={sec.map.placeName} />
                 )}
